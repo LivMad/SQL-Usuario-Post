@@ -1,0 +1,24 @@
+meta {
+  name: criar postagem
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://127.0.0.1:8000/posts/?username=patati&password=567
+  body: json
+  auth: none
+}
+
+query {
+  username: patati
+  password: 567
+}
+
+body:json {
+  {
+    "title": "iaiaia ioio",
+    "username": "patati",
+    "password": "567"
+  }
+}

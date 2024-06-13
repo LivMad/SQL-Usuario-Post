@@ -1,0 +1,16 @@
+meta {
+  name: lista todos posts de todos usuários
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://127.0.0.1:8000/usuarios/posts/?username=patati&password=567
+  body: none
+  auth: none
+}
+
+query {
+  username: patati
+  password: 567
+}
